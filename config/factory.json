@@ -58,6 +58,23 @@
     "min_free_memory_gib": 8,
     "memory_per_job_gib": 2
   },
+  "version": {
+    "line": "0.1",
+    "files": [
+      {
+        "file": "config/version.json",
+        "read": "json:version"
+      },
+      {
+        "file": "backend/Cargo.toml",
+        "read": "toml:package.version"
+      },
+      {
+        "file": "frontend/package.json",
+        "read": "json:version"
+      }
+    ]
+  },
   "fixes": [
     "version",
     "lock",
